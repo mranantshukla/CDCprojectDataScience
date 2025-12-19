@@ -1,4 +1,4 @@
-## Multimodal House Price Valuation (King County + Sentinel Hub)
+## Multimodal House Price Valuation
 
 This repository implements a **production-style multimodal regression system** to predict real estate prices using:
 
