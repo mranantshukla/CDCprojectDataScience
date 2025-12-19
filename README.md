@@ -168,4 +168,9 @@ If imagery only yields marginal or unstable improvements, the conclusion will ex
 - Embeddings and splits are cached to disk to avoid recomputation and ensure reproducible experiments.
 - The code is written assuming **CPU-only** environments; models and batch sizes are tuned accordingly.
 
+---
 
+**Submitted by:**
+- Anant Shukla
+- 23113024
+- IIT Roorkee
