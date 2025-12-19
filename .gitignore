@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data directories (generated files)
+data/raw/
+data/processed/
+data/satellite/
+data/satellite_test/
+data/embeddings/
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports (keep structure, but ignore large generated files if needed)
+# reports/*.csv  # Uncomment if you don't want to track prediction CSVs
+# reports/*.png  # Uncomment if you don't want to track generated images
+
+# Temporary files
+*.tmp
+*.log
+
