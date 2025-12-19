@@ -5,7 +5,7 @@
 - **Training properties**: 13,334
 - **Validation properties**: 2,875
 - **Test properties**: 5,404
-- **Total properties with satellite images**: 16,110 (15,812 newly fetched + 298 cached)
+- **Total properties with satellite images**: 16,110
 - **Training properties with images**: 13,334 (100% coverage)
 - **Validation properties with images**: 2,875 (100% coverage)
 
@@ -15,24 +15,22 @@
 
 ### Tabular-Only Baselines (Full Validation Set: 2,875 properties)
 
-| Model | RMSE (price) | R² | Notes |
-|-------|--------------|----|----|
-| **Ridge Regression** | $196,611 | 0.690 | Linear baseline with regularization |
-| **Random Forest** | $139,218 | 0.844 | **Best tabular baseline** |
+|          Model       | RMSE (price) |   R²  |             Notes                   |
+|----------------------|--------------|-------|-------------------------------------|
+| **Ridge Regression** | $196,611     | 0.690 | Linear baseline with regularization |
+| **Random Forest**    | $139,218     | 0.844 | **Best tabular baseline**           |   
 
 **Interpretation**: Tabular features (size, quality, location, etc.) already explain **84.4%** of price variance on a spatially aware validation split. This is a strong baseline.
 
----
 
 ### Image-Only Model (Validation Subset with Images: 2,913 properties)
 
-| Model | RMSE (price) | R² | Notes |
-|-------|--------------|----|----|
-| **ResNet18 Embeddings → Random Forest** | $316,385 | 0.198 | Image-only prediction |
+|                    Model                | RMSE (price) |   R²  |             Notes                   |
+|-----------------------------------------|--------------|-------|-------------------------------------|
+| **ResNet18 Embeddings → Random Forest** | $316,385     | 0.198 | Image-only prediction               |
 
 **Interpretation**: Satellite imagery **alone** is a weak predictor (R² = 0.198), substantially worse than tabular features. This suggests that visual context needs to be **combined** with tabular data rather than used in isolation.
 
----
 
 ### Multimodal Fusion Models (Validation Subset with Images: 2,913 properties)
 
