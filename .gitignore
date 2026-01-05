@@ -18,12 +18,6 @@ env/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Data directories (generated files)
-data/raw/
-data/processed/
-data/satellite/
-data/satellite_test/
-data/embeddings/
 
 # Environment variables
 .env
